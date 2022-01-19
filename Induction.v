@@ -846,7 +846,6 @@ Proof.
   - simpl.
     rewrite -> nat_twice.
     rewrite -> IHb''.
-    simpl.
     rewrite -> incr_twice_to_B1.
     reflexivity.
 Qed.
