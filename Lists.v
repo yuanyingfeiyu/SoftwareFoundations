@@ -1114,7 +1114,7 @@ Definition option_elim (d : nat) (o : natoption) : nat :=
 Definition hd_error (l : natlist) : natoption :=
   match l with
   | nil => None
-  | n :: t => Some n
+  | h :: t => Some h
   end.
 
 Example test_hd_error1 : hd_error [] = None.
